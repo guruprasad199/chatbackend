@@ -18,8 +18,10 @@ require('dotenv').config();
 // 	}
 // );
 
+const MONGO_URL_NEW = "mongodb+srv://realchat:HV4XhQSDjNvVDcn3@cluster0.werms.mongodb.net/?retryWrites=true&w=majority"
+
 mongoose.connect(
-	"" + process.env.MONGO_URL_NEW,
+	"" + MONGO_URL_NEW,
 	{ },
 	() => { console.log("Connected to DB"); }
   )
