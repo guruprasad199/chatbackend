@@ -87,7 +87,7 @@ io.on('connection', (socket)=> {
 })
 
 app.get("/", (req, res) => {
-  res.send("404 URL NOT FOUND");
+  res.send({messages: "Sorry, page not found"});
 });
 
 
